@@ -9,7 +9,6 @@ section, article {margin-top: 10px;}
     color: white;
     height: 65px;
     width: 100%;
-    margin-bottom: 20px;
     top: 0;
     z-index: 1030;
     text-align: center;
@@ -17,10 +16,12 @@ section, article {margin-top: 10px;}
 }
 
 #hours img{ height: 15px;}
-#hours-text {display: table-cell; vertical-align: middle;}
+
+#hours-text {display: table-cell; vertical-align: middle; text-align: center;}
+
 #header-contact-us{
     width: 100%;
-    height: 65%;
+    height: 100%;
     z-index: 1030; 
     background: white;
     text-align: center;
@@ -35,14 +36,14 @@ section, article {margin-top: 10px;}
     padding: 5px;
 }
 
-.header-image-infos p {opacity: .5;}
+.header-image-infos #email {opacity: .5;font-size: 1em;}
 .header-image-infos a {color: black;}
 .header-image-infos img {margin-bottom: 8px;}
 .header-image-infos h4{margin: 0;}
 
 #logo-header {
     display: none;
-    width: 147px;
+    width: 200px;
 }
 
 .cabecalho, html, body, .header-text{height: 100%;}
@@ -52,13 +53,6 @@ section, article {margin-top: 10px;}
 .shrink li{
     padding: 0px!important;
     transition: .2s ease;
-}
-
-@media screen and (min-width:992px){ 
-    .navbar li {
-        padding: 16px;
-        transition: .4s ease;
-    }
 }
 
 .navbar {
@@ -87,12 +81,14 @@ section, article {margin-top: 10px;}
     background-position: center;
 }
 
-#header-message h1{
+#header-message h1,h3{
     padding-bottom: 1em;
     padding-top: 1em;
     color: rgb(119,221,119);
     text-transform: uppercase;
 }
+
+#header-message h3 {display: none;}
 
 #header-message {
     border: 1px solid;
@@ -115,50 +111,6 @@ section, article {margin-top: 10px;}
     to{
         opacity: 1;
     }
-}
-
-@media screen and (min-width:992px) {
-    #header-message {padding: 3em 5em;}
-
-    #header-contact-us {height: 42%!important;}
-}
-
-@media screen and (min-width:276px){
-
-    #header-contact-us {height: 80%;}
-
-    #div-logo-header {margin-bottom: 30px;}
-
-    #logo-header{
-        display: inline;
-        width: 107px;
-    }
-    .header-image-infos img{height:40px;}
-}
-
-@media screen and (max-width:576px){
-    #header-message h1{
-        font-size: 2em!important;
-    }
-
-    #header-message {border: none;}
-}
-
-@media screen and (max-width:310px) {
-    #header-message h1{
-        font-size: 1em!important;
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    #header-message span {display: none;}
-
-    .btn-outline-light{
-        width: 88px!important;
-        font-size: .7rem;
-    }
-
-    .wellcome{padding: 10px!important;}
 }
 
 .header-text {
@@ -227,26 +179,26 @@ section, article {margin-top: 10px;}
     color: whitesmoke;
 }
 
-#domiciliar-exams{
+.toggle-list{
     list-style-type: none;
     padding-top: 2em;
     transition: 1s ease;
     cursor: pointer;
 }
 
-#domiciliar-exams:hover {
+.toggle-list:hover {
     transition: .5s ease;
     color: rgb(119,221,119);
 }
 
-#domiciliar-exams:not(:hover){transition: .5s ease;}
+.toggle-list:not(:hover){transition: .5s ease;}
 
 .parceiros {
     overflow: hidden;
     margin-top:50px;
 }
 
-#domiciliar-exams i{font-size: 17px;}
+.toggle-list i{font-size: 17px;}
 
 .parceiros:hover{
     
@@ -345,7 +297,7 @@ section, article {margin-top: 10px;}
 }
 
 footer{
-    height: 80%;
+    height: 86%;
     font-size: .8em;
     text-align: center;
     padding: 2em 0;
@@ -353,7 +305,7 @@ footer{
     color: rgba(0,0,0,.5)!important;
 }
 
-footer div{margin-bottom: 15px;}
+.contact-info{margin-bottom: 30px!important;}
 
 footer a, h6 {font-weight: 400!important;}
 
@@ -372,15 +324,107 @@ footer img{
 }
 
 footer .logo-footer {
-    height: 38px;
+    height: 30px;
     margin-bottom: 30px;
 }
 
 footer #contact-us, #social-media, #find-us img {opacity: .5;}
 
+
+footer #social-media a:hover{cursor: pointer;}
+
+#copyright{
+    text-align: center;
+    background:  rgb(119,221,119);
+    color: whitesmoke;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:1140px) {
+    #header-contact-us {height: 50% !important;}
+}
+
+@media screen and (min-width:992px) {
+    .navbar li {
+        padding: 16px;
+        transition: .4s ease;
+    }
+    
+    #header-message {padding: 3em 5em;}
+
+    /* #header-contact-us {height: 55% !important;} */
+}
+
+@media screen and (min-width:276px){
+
+    #div-logo-header {margin-bottom: 30px;}
+
+    #logo-header{
+        display: inline;
+        width: 147px;
+    }
+    .header-image-infos img{height:40px;}
+
+    #logo-footer {
+        height: 58px;
+    }
+}
+
+@media screen and (min-width: 310px) {
+    #header-message h1 {display: none;}
+
+    #header-message h3 {display: block;}
+}
+
+@media screen and (min-width:576px){
+
+    #logo-header{
+        width: 180px;
+    }
+    .header-image-infos img{height:40px;}
+    .email-break-row {display: none;}
+}
+
+@media screen and (max-width:576px){
+    #header-message h1{
+        font-size: 2em!important;
+    }
+
+    #header-message {border: none;}
+}
+
+@media screen and (max-width:310px) {
+    #header-message h1{
+        font-size: 1em!important;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #header-message span {display: none;}
+
+    .btn-outline-light{
+        width: 88px!important;
+        font-size: .7rem;
+    }
+    
+    .wellcome{padding: 10px!important;}
+}
+
+
 @media screen and (min-width:768px){
 
-    #header-contact-us{ height: 48%;}
+    #header-contact-us{ height: 55%;}
+
+    .contact-info-header img {
+        float:left;
+    }
+
+    .contact-info-header h5, p {
+        text-align: left;
+        font-size: 1rem!important;
+    }
+
     #header-contact-us h5, #header-contact-us p {
         text-align: left;
         margin-left: 50px;
@@ -400,10 +444,3 @@ footer #contact-us, #social-media, #find-us img {opacity: .5;}
     footer h6{text-align: left;}
 }
 
-footer #social-media a:hover{cursor: pointer;}
-
-#copyright{
-    text-align: center;
-    background:  rgb(119,221,119);
-    color: whitesmoke;
-}
