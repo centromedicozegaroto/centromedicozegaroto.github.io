@@ -342,22 +342,6 @@ footer #social-media a:hover{cursor: pointer;}
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width:1140px) {
-    #header-contact-us {height: 50% !important;}
-}
-
-@media screen and (min-width:992px) {
-    .navbar li {
-        padding: 16px;
-        transition: .4s ease;
-    }
-    
-    #header-message {padding: 3em 5em;}
-
-    /* #header-contact-us {height: 55% !important;} */
-
-}
-
 @media screen and (min-width:276px){
 
     #div-logo-header {margin-bottom: 30px;}
@@ -380,6 +364,27 @@ footer #social-media a:hover{cursor: pointer;}
     #header-message h3 {display: block;}
 }
 
+@media screen and (max-width:310px) {
+    #header-message h1{
+        font-size: 1em!important;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #header-message span {display: none;}
+
+    .btn-outline-light{
+        width: 88px!important;
+        font-size: .7rem;
+    }
+    
+    .wellcome{padding: 10px!important;}
+}
+
+@media screen and (min-height: 568px), screen and (max-width: 768px) {
+    #header-contact-us{ height: 120%;}
+}
+
 @media screen and (min-width:576px){
 
     #logo-header{
@@ -397,21 +402,16 @@ footer #social-media a:hover{cursor: pointer;}
     #header-message {border: none;}
 }
 
-@media screen and (max-width:310px) {
-    #header-message h1{
-        font-size: 1em!important;
-        padding-right: 0;
-        padding-left: 0;
-    }
+@media screen and (min-height: 640px) {
+    #header-contact-us{ height: 105%;}
+}
 
-    #header-message span {display: none;}
+@media screen and (min-height: 667px) {
+    #header-contact-us{ height: 102%;}
+}
 
-    .btn-outline-light{
-        width: 88px!important;
-        font-size: .7rem;
-    }
-    
-    .wellcome{padding: 10px!important;}
+@media screen and (min-height: 731px) {
+    #header-contact-us{ height: 94%;}
 }
 
 
@@ -447,3 +447,30 @@ footer #social-media a:hover{cursor: pointer;}
     footer h6{text-align: left;}
 }
 
+@media screen and (min-height: 812px) {
+    #header-contact-us{ height: 84%;}
+}
+
+@media screen and (min-width:992px) {
+    .navbar li {
+        padding: 16px;
+        transition: .4s ease;
+    }
+    
+    #header-message {padding: 3em 5em;}
+
+    /* #header-contact-us {height: 55% !important;} */
+
+}
+
+@media screen and (min-height: 1024px) {
+    #header-contact-us{ height: 32%;}
+}
+
+@media screen and (min-width:1140px) {
+    /* #header-contact-us {height: 50% !important;} */
+}
+
+@media screen and (min-height: 1140px) {
+    #header-contact-us{ height: 25%;}
+}

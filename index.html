@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
     <title>Centro medico Zé garoto</title>
 </head>
 <body>
@@ -421,13 +422,14 @@ $(document).ready(function(){
     var menu = $('.navbar.navbar-expand-lg.navbar-light.bg-success');
 
     var origOffsetY = menu.offset().top;
-
+    console.log(menu.height());
+    console.log(parseInt(menu.css('padding-top')));
     $(window).scroll(function scroll(){
         if($(window).scrollTop() >= origOffsetY) {
             $(menu).addClass('fixed-top');
-            $(menu).css('top', '0');
-
-            $('.cabecalho').css('margin-top', '56px');
+            // $(menu).css('top', '0');
+            
+            $('.cabecalho').css('margin-top', menu.height() + parseInt(menu.css('padding-top')) * 2);
         }
         else{
             $(menu).removeClass('fixed-top');
@@ -439,7 +441,9 @@ $(document).ready(function(){
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="js/form.js"></script>
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+crossorigin=""></script>
 <script src="js/google-maps.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4ncRCunpMg0StV9Mh1C5enXRgWkf_ho8&callback=mapController.init" async defer></script>
 </body>
 </html>
