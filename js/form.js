@@ -11,7 +11,7 @@ function toJson(){
 
     $.ajax({
         method: "POST",
-        url: 'https://zegaroto.herokuapp.com/faleConosco',
+        url: '/faleConosco',
         data: formJson,
         success: function(result){
             toastr.success(result);

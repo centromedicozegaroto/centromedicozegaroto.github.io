@@ -422,13 +422,10 @@ $(document).ready(function(){
     var menu = $('.navbar.navbar-expand-lg.navbar-light.bg-success');
 
     var origOffsetY = menu.offset().top;
-    console.log(menu.height());
-    console.log(parseInt(menu.css('padding-top')));
+    
     $(window).scroll(function scroll(){
         if($(window).scrollTop() >= origOffsetY) {
-            $(menu).addClass('fixed-top');
-            // $(menu).css('top', '0');
-            
+            $(menu).addClass('fixed-top');            
             $('.cabecalho').css('margin-top', menu.height() + parseInt(menu.css('padding-top')) * 2);
         }
         else{
