@@ -55,7 +55,6 @@ var view = {
         });
         
         L.marker([initial_location.lat, initial_location.lng], {icon: greenIcon}).addTo(map)
-            .bindPopup('<h6>N° 35 - sobrado</h6>')
             .openPopup();
     }
 };
