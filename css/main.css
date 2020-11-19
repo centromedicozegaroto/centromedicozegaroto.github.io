@@ -159,7 +159,7 @@ section, article {margin-top: 10px;}
     color: #455463;
     margin-top: 20px;
 }
-
+.sublist{float: right; display: inline-block;}
 .wellcome{
     padding: 20px 70px;
     line-height: 40px;
