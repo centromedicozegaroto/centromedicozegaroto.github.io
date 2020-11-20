@@ -5,7 +5,7 @@ body {font-family: Open Sans,Helvetica,Arial,sans-serif;}
 section, article {margin-top: 10px;}
 
 #hours{
-    background: #ec5c42;
+    background: #ec0101;
     color: white;
     height: 65px;
     width: 100%;
@@ -41,6 +41,14 @@ section, article {margin-top: 10px;}
 .header-image-infos a, h5 {color: #393e46;}
 .header-image-infos img {margin-bottom: 8px;}
 .header-image-infos h4{margin: 0;}
+
+.modal-content {border: none;}
+.popup.title {text-align: center;}
+.modal-body{text-align: center;}
+.modal-body h2 h4{line-height: 1.4;}
+#contacts-modal{text-align: center;}
+#contacts-modal img{height: 40px!important; margin: 5px;}
+#contacts-modal img.rounded{border-radius: 100%!important;}
 
 #logo-header {
     display: none;
@@ -82,9 +90,9 @@ section, article {margin-top: 10px;}
     background-position: center;
 }
 
-#header-message h1,h3{
-    padding-bottom: 1em;
-    padding-top: 1em;
+#header-message h1 h3{
+    /* padding-bottom: 1em;
+    padding-top: 1em; */
     color: rgb(119,221,119);
     text-transform: uppercase;
 }
@@ -201,9 +209,6 @@ section, article {margin-top: 10px;}
 
 .toggle-list i{font-size: 17px;}
 
-.parceiros:hover{
-    
-}
 .owl-carousel {
     background: linear-gradient(to right, #28a745,#63D471);
     width: 100%;

@@ -16,6 +16,30 @@
     <title>Centro medico Zé garoto</title>
 </head>
 <body>
+    <div id="popup" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2">
+                <button type="button" class="close ml-auto" data-dismiss="modal" style="padding: .5rem 1rem">&times;</button>
+                <div class="popup title p-2 pb-3">
+
+                    <img src="images/loudspeaker.png">
+                </div>
+                <div class="modal-body p-1">
+                    <h4 class="p-1">Exames de Risco Cirurgico</h4>
+                    <h3 class="p-1">COM PREÇOS POPULARES!!!</h3>
+                    
+                </div>
+                <div id="contacts-modal" class="p-2 mb-2">
+                    <img src="images/telephone-modal.png" alt=""/>
+                    <img src="images/whatsapp-modal.png" alt=""/>
+                    <img class="rounded" src="images/facebook-modal.png" alt=""/>
+                    <img class="rounded" src="images/instagram-modal.png" alt=""/>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
     <div id="hours" class="p-2">
         <p id="hours-text">
             <img src="images/clock-with-white-face.png" alt="Horario de atendimento">
@@ -25,6 +49,8 @@
     <div id="header-contact-us" class="p-3">
         <div class="container-fluid">
             <div class="row">
+
+                
                 <div class="col-0"></div>
                 
                 <div id="div-logo-header" class="col-12  p-3"><img src="images/logo-clinica.png" id="logo-header" class="logo-footer" alt=""></div>
@@ -435,5 +461,10 @@
 integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
 crossorigin=""></script>
 <script src="js/google-maps.js"></script>
+<script type="text/javascript">
+    $(window).on("load", function(){
+        $("#popup").modal('show');
+    });
+</script>
 </body>
 </html>
