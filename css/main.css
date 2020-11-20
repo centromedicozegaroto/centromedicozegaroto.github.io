@@ -15,7 +15,7 @@ section, article {margin-top: 10px;}
     display: table;
 }
 
-#hours img{ height: 15px;}
+#hours img{ height: 20px; margin: 6px;}
 
 #hours-text {display: table-cell; vertical-align: middle; text-align: center;}
 
@@ -27,19 +27,17 @@ section, article {margin-top: 10px;}
     background: white;
     text-align: center;
 }
-
+a.btn.btn-outline-light.btn-lg:hover{background-color: #28a745; border: 1px solid #28a745;}
 #contact-us-header, #find-us-header-icon {margin-bottom: 30px;}
 
 .header-image {
     height: 30px;
-    border: 2px solid #ec5c42;
-    border-radius: 7px;
-    padding: 5px;
+    padding: 3px;
 }
 
 .header-image-infos #email {opacity: .5;font-size: 1em;}
 .header-image-infos a, h5 {color: #393e46;}
-.header-image-infos img {margin-bottom: 8px;}
+.header-image-infos img {margin-bottom: 8px; height: 30px;}
 .header-image-infos h4{margin: 0;}
 
 .modal-content {border: none;}
@@ -79,32 +77,33 @@ section, article {margin-top: 10px;}
 
 .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;}
 
-.bg-success {background: rgb(119,221,119)!important;}
+.bg-success {background: #28a745!important;}
 
 .logo-menu{height: 58px;}
 
 .cabecalho {
-    background-image: url("../images/newback.jpeg");
+    background-image: url("../images/bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#header-message h1 h3{
+#header-message h1, h3{
     /* padding-bottom: 1em;
     padding-top: 1em; */
-    color: rgb(119,221,119);
+    /* color: rgb(62, 87, 62); */
     text-transform: uppercase;
 }
 
 #header-message h3 {display: none;}
 
 #header-message {
-    border: 1px solid;
+    /* border: 1px solid;
     border-radius: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 40px; */
     padding-top: 40px;
 }
+.l15 {line-height: 1.5;}
 
 #header-message span{font-size: 19px;}
 
@@ -141,8 +140,7 @@ section, article {margin-top: 10px;}
 
 .btn-outline-light {
     width: 200px;
-    border-color: rgb(119,221,119);
-    color: rgb(119,221,119);
+
 }
 
 .btn-outline-light:hover {
@@ -184,7 +182,7 @@ section, article {margin-top: 10px;}
 }
 
 .bg-success {
-    background-color: rgb(119,221,119);
+    background-color: #28a745;
     color: whitesmoke;
 }
 
@@ -275,8 +273,8 @@ section, article {margin-top: 10px;}
 #btn-send-form {
     margin-top: 20px;
     padding: 12px;
-    background-color: rgb(119,221,119);
-    border-color: rgb(119,221,119);
+    background-color: #28a745;
+
 }
 
 #btn-to-top{
@@ -314,8 +312,11 @@ footer{
 .contact-info{
     margin-bottom: 10px!important;
     margin-top: 10px!important;
+    font-size: 1rem!important;
 }
-
+.contact-info  span{
+    font-size: 1.25rem!important;
+}
 footer a, h6 {font-weight: 400!important;}
 
 footer a{
@@ -344,7 +345,7 @@ footer #social-media a:hover{cursor: pointer;}
 
 #copyright{
     text-align: center;
-    background:  rgb(119,221,119);
+    background:  #28a745;
     color: whitesmoke;
 }
 
@@ -358,7 +359,7 @@ footer #social-media a:hover{cursor: pointer;}
         display: inline;
         width: 147px;
     }
-    .header-image-infos img{height:40px;}
+    /* .header-image-infos img{height:40px;} */
 
     #logo-footer {
         height: 58px;
@@ -398,7 +399,7 @@ footer #social-media a:hover{cursor: pointer;}
     #logo-header{
         width: 180px;
     }
-    .header-image-infos img{height:40px;}
+    /* .header-image-infos img{height:40px;} */
     .email-break-row {display: none;}
 }
 
@@ -433,12 +434,11 @@ footer #social-media a:hover{cursor: pointer;}
 
     .contact-info-header h5, p {
         text-align: left;
-        font-size: 1rem!important;
     }
 
     #header-contact-us h5, #header-contact-us p {
         text-align: left;
-        margin-left: 50px;
+        margin-left: 40px;
     }
     #find-us-header-icon img , #contact-us-header img {float: left;}
 
