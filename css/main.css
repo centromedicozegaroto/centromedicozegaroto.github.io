@@ -314,8 +314,9 @@ footer{
     margin-top: 10px!important;
     font-size: 1rem!important;
 }
-.contact-info  span{
+.contact-info span{
     font-size: 1.25rem!important;
+    font-weight: 500!important;
 }
 footer a, h6 {font-weight: 400!important;}
 
